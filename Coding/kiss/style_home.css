@@ -1,0 +1,354 @@
+/* General */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+/*header*/
+.header {
+    background-color: #3C8DBC;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*3 line*/
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 7px;
+    transition: 0.4s;
+}
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+}
+.bars-container {
+    padding-top: 10px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    overflow-x: hidden; 
+}
+/*kanaan logo header*/
+.logo-container {
+    display: inline-block;
+    position: absolute;
+    padding-top: 5px;
+    height: 50px;
+    user-select: none;
+}
+.logo-text {
+    color: white;
+    font-weight: bold;
+    float: right;
+    display: block;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+
+.bars-container:hover, .logo-container:hover, .right-header:hover {
+    background-color: #367FA9;
+    cursor: pointer;
+}
+
+/*right side header*/
+.right-header {
+    float: right;
+    background: transparent;
+    border: none;
+    align-content: center;
+}
+
+.avatar {
+    float: left;
+    margin-top: 8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.avatar-name {
+    display: block;
+    float: right;
+    color: white;
+    padding: 17px 10px;
+    font-size: 13px;
+}
+
+/*sidebar*/
+.sidebar {
+    height: 100%;
+    margin-top: 50px;
+    width: 40px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #1A252F;
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+
+.sidebar:hover {
+    width: 250px !important;
+}
+.sidebar:hover #sidebar-content {
+    display: block !important;
+}
+.sidebar:hover .displayed-content {
+    display: none !important;
+}
+.sidebar-button {
+    border: none;
+    background: transparent;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+}
+.sidebar-button i{
+    transition: 0.4s;
+}
+
+#sidebar-buttonText {
+    color: #B2B2B2;
+    word-wrap: nowrap;
+    font-size: 20px;
+    text-overflow: clip;
+    transition: 0.4s;
+}
+.sidebar-button:hover {
+    cursor: pointer;
+}
+.sidebar-button:hover #sidebar-buttonText {
+    color: white;
+}
+#sidebar-content {
+    margin-top: 20px;
+    display: none;
+}
+
+#sidebar-content i {
+    color: white;
+    padding-right: 10px;
+    font-size: 14px;
+
+}
+.displayed-content {
+    margin-top: 10px;
+}
+.displayed-content i {
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    padding-bottom: 10px;
+
+}
+
+/*profile expanded*/
+.profile-container {
+    width: 350px;
+    height: 140px;
+    margin-top: 52px;
+    margin-right: 25px;
+    background-color: #4d9bc7;
+    float: right;
+    vertical-align: center;
+    z-index: 1;
+    text-align: left;
+}
+#profile {
+    display: none;
+}
+.profile-container img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 13px;
+    float: left;
+    margin-left: 6px;
+}
+
+.profile-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.profile-text-container {
+    padding-top: 27px;
+    padding-left: 105px;
+}
+
+.logout {
+    float: right;
+    margin-top: 12px;
+    margin-right: 13px;
+    font-size: 15px;
+    background-color: #4d9bc7;
+    border: hidden;
+    padding: 10px;
+}
+.logout:hover {
+    background-color: #367FA9;
+}
+
+/*notification expanded*/
+.notification-container{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 53px;
+    right: 168px;
+    background-color: #4d9bc7;
+    vertical-align: center;
+    z-index: 1;
+    text-align: left;
+}
+
+.notification--btn{
+    width: 100%;
+    background-color: #367FA9;
+    height: 30px ;
+    border: none;
+    border-bottom: 3px solid rgb(130, 130, 130);
+}
+.notification--content{
+    width: 100%;
+    height: 50px;
+    background-color: #B2B2B2;
+    display: none;
+}
+
+/* Main content */
+.home-container {
+    padding-top: 50px;
+}
+#home-container {
+    padding-left: 40px;
+    transition: 0.4s;
+}
+.row_one {
+    margin-top: 25px;
+}
+
+
+/* Uncomplete cell */
+.Schedule {
+    margin-left: 20px;
+    border-top: 2px solid rgb(0, 8, 255);
+    border-radius: 5px;
+    height: 100%;
+    width: 24%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.Schedule-header{
+    text-align: center;
+
+}
+/*calander*/
+.calander{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.calander header{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: space-between;
+}
+.material-symbols-rounded{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1rem;
+    user-select: none;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+}
+.material-symbols-rounded:hover{
+    background: #f2f2f2;
+}
+.current-date{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.calendar-content{
+    padding: 0px 20px 20px;
+}
+
+.calendar-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.calendar-content .days{
+    margin-top: 0px;
+    margin-bottom: 17px;
+}
+.calendar-content li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 0.7rem;
+  padding: 0px;
+}
+.calendar-content .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar-content .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: #fff;
+}
+.days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li.active::before{
+    background: #3C8DBC;
+}
+.days li:not(.active):hover::before{
+    background: #f2f2f2;
+}

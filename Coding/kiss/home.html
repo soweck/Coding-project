@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> KGS JAKARTA</title>
+        <link rel="stylesheet" href="style_home.css">
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <script src="https://kit.fontawesome.com/8089de0a65.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header-->
+        <div class="header">
+            <!-- Sidebar header button -->
+            <div id="bars"class=" bars-container" onclick="barClicked(this)"> 
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!-- Kanaan  Logo-->
+            <div class="logo-container">
+                <img src="logo.png" style="height: 40px;" alt="kanaan logo">
+                <span class="logo-text">Kanaan Global School</span>
+            </div>
+            <!-- Profile header button -->
+            <button class="right-header" onclick="avatar()">
+                <img src="avatar.jpg" alt="avatar" class="avatar">
+                <span class="avatar-name"> Nobu Wuysang </span>
+            </button>
+            <!-- Notification header-->
+            <button class="right-header" onclick="notification()">
+                <i class="fa-regular fa-bell" style="color: white; font-size: 19px;padding: 15px 5px;"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Collapse-->
+        <div id="sidebar" class="sidebar">
+            <div class="displayed-content" id="displayed-content">
+                <i class="fa-solid fa-bullhorn"></i>    
+                <BR>
+                <i class="fa-solid fa-clipboard-user"></i>
+                <BR>
+                <i class="fa-solid fa-calendar"></i>
+                <BR>
+                <i class="fa-solid fa-clock"></i>
+                <BR>
+                <i class="fa-solid fa-folder-open"></i>
+                <BR>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <BR>
+                <i class="fa-solid fa-clipboard-list"></i>
+                <BR>
+                <i class="fa-solid fa-file-lines"></i>
+                <BR>
+                <i class="fa-solid fa-medal"></i>
+                <BR>
+                <i class="fa-solid fa-address-book"></i>
+            </div>
+            <!-- Sidebar Expand-->
+            <div id="sidebar-content">
+                <button class="sidebar-button"><i class="fa-solid fa-bullhorn"></i><span id="sidebar-buttonText">Announcement</span></button>
+                <br> 
+                <button class="sidebar-button"><i class="fa-solid fa-clipboard-user"></i><span id="sidebar-buttonText">Attendance</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-calendar"></i><span id="sidebar-buttonText">Calander</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-clock"></i><span id="sidebar-buttonText">Schedule</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-folder-open"></i><span id="sidebar-buttonText">Learning Material</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-graduation-cap"></i><span id="sidebar-buttonText">e-Learning</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-clipboard-list"></i><span id="sidebar-buttonText">Assignment</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-file-lines"></i><span id="sidebar-buttonText">Test</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-medal"></i><span id="sidebar-buttonText">Grade</span></button>
+                <br>
+                <button class="sidebar-button"><i class="fa-solid fa-address-book"></i><span id="sidebar-buttonText">Teacher's Info</span></button>
+            </div>
+        </div>
+        <!-- Profile expanded-->
+        <div class="profile-container" id="profile">
+            <img src="avatar.jpg" alt="user image">
+            <div class="profile-text-container"> 
+                <span class="profile-text"> Nobu Wuysang <br> Grade 11-Trustworthiness</span>  
+                <span><a href="mailto:aldenwuysang@kanaanglobal.sch.id">nobuwuysang@kanaanglobal.sch.id</a></span> 
+            </div> 
+            <!-- Logout button -->
+            <div class="logout-container" style="background-color: #4d9bc7; height: 40px;"> <button class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button></div>
+        </div>
+        <!--notification expanded-->
+        <div class="notification-container" id="notification">
+            <button class="notification--btn" onclick="announcmentDropDown()"> <span style="color: white;"> Announcement</span> <i id="dropdownIcon" class="fa-solid fa-angle-down" style="color: white;"></i> </button>
+            <div class="notification--content" id="announcment--content"> </div>
+            <button class="notification--btn" onclick="NotificationDropDown()"> <span style="color: white;"> Notification</span> <i id="dropdownIcon2" class="fa-solid fa-angle-down" style="color: white;"></i> </button>
+            <div class="notification--content" id="notification--content"> </div>
+        </div>
+        
+        <!-- home container-->
+        <div class="home-container" id="home-container">
+            <!-- First Row-->
+            <div class="row_one">
+                <!-- First Cell-->
+                <div class="Schedule">
+                    <header class="Schedule-header"> Schedule</header>
+                    <div class="calander">
+                        <header>
+                            <button id="calander-prev" class="material-symbols-rounded" onclick="monthSelector(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                            <p class="current-date"></p>
+                            <button id="calander-next" class="material-symbols-rounded" onclick="monthSelector(1)"><i class="fa-solid fa-chevron-right"></i></button>
+                        </header>
+                        <div class="calendar-content">
+                          <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                          </ul>
+                          <ul class="days"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="script_home.js"></script>
+    </body>
+</html>

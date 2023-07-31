@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+body{
+    align-items: center ;
+    background:linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1 );
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    flex-basis: 400px;
+    height: 590px;
+    padding: 20px 35px;
+}
+.display {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 20px;
+    overflow: auto;
+    text-align: right;
+    width: 353px;
+    margin-bottom: 5px;
+}
+
+/*button format*/
+.buttons_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*buttons*/
+.calc_NumButtons{
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    border: none;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: inherit;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    font-weight: bold;
+}
+.calc_SymButtons{
+    border-radius: 12px;
+    background-color: rgb(255, 0, 93); 
+    border: none;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: inherit;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    font-weight: bold;
+}
+
+.calc_3buttons{
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    border: none;
+    padding: 30px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 287px;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    font-weight: bold;
+}
+
+/*button hover*/
+.calc_SymButtons:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+.calc_NumButtons:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+.calc_3buttons:hover{
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+/*button pressed*/
+.calc_SymButtons:active{
+    background-color: rgb(231, 5, 88); 
+}
+
+.calc_NumButtons:active{
+    background-color: rgba(243, 241, 241, 0.75);   
+}
+.calc_3buttons:active{
+    background-color: rgba(243, 241, 241, 0.75);   
+}
+
+.show {display: block;}

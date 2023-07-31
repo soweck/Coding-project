@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+*{box-sizing: border-box;}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.width-full{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+.navigation--top{
+    overflow: hidden;
+    background-color: #ffffff;
+    height: 55px;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.4s;
+}
+
+.appear{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px !important;
+    z-index: 1;
+}
+.disappear{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 1;
+}
+.navigation--list{
+    width: 10%;
+}
+.navigation--top a{
+    color: #606060;
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+
+.navigation--top .navigation--list:hover a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navigation--top img{
+    object-fit:fill;
+    height: 53px;
+    display: block;
+}
+
+.navigation--list-button{
+    width: 5%;
+    position: relative;
+    margin-left: auto;
+}
+.navigation--list-button button{
+    background-color: #e0004d;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navigation--list-button button:hover{
+    background-color: #980236;
+}
+.navigation--list-icon i:hover{
+    font-size: 23px;
+    cursor: pointer; 
+}
+
+.filler{
+    background-color: lightblue;
+    height: 2000px;  width: 2000px;
+}

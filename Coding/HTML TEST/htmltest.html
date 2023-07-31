@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #myModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openModal()">Open Modal</button>
+    <div id="myModal">
+        <h2>Modal Content</h2>
+        <p>This is a modal. Click anywhere outside to close.</p>
+    </div>
+
+    <script>
+        function openModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            setTimeout(function() {
+                document.addEventListener("click", closeModalOutside);
+            }, 0);
+        }
+
+        function closeModalOutside(event) {
+            var modal = document.getElementById("myModal");
+            if (!modal.contains(event.target)) {
+                modal.style.display = "none";
+                document.removeEventListener("click", closeModalOutside);
+            }
+        }
+    </script>
+</body>
+</html>

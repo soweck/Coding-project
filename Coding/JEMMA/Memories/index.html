@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title> Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="JEMMA\medias\favicon.ico">
+    </head>
+    <body onload="showSlides(1)">
+        <!--top navigation-->
+        <div class="topnav">
+            <button class="tabs" id="logo" onclick="fading()"> <img src="/JEMMA\medias\logo logo.png" alt="logo" style="border:0x"><span class="logo-text"> Poop</span> </button>
+            <button class="tabs"> About  </button>
+            <button class="tabs"> Contacts  </button>
+            <button class="tabs">  Reviews  </button>
+            <button class="tabs">  Store  </button>
+        </div>
+        <!--image slideshow-->
+        <div class="slideshow-container">
+            <div class="pictures fade">
+                <img src="/JEMMA\medias\jolin.jpg" style="width:100%">  
+            </div>
+            <div class="pictures fade">
+                <img src="/JEMMA\medias\evelynn.jpg" style="width:100%">
+            </div>
+            <div class="pictures fade">
+                <img src="/JEMMA\medias\marvel.jpg" style="width:100%">
+            </div>
+            <div class="pictures fade">
+                <img src="/JEMMA\medias\mercedes.jpg" style="width:100%">
+            </div>
+            <div class="pictures fade">
+                <img src="/JEMMA\medias\andrew.jpg" style="width:100%">
+            </div>
+            <div class="slideshow-background"></div>    
+            <a class="prev" onclick="plusSlides(-1)">< </a>
+            <a class="next" onclick="plusSlides(1)">></a>
+            <div class = "dot-container">
+                <span class="dot" onclick="currentSlide(1)"> </span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <!--members -->
+        <div class="members-container">
+            <div class="members-text">
+                <span class="members">Meet our <br> members !<br> &#8650;</span>
+            </div>
+            <section class="members-row1">
+                <div class="coloumn1">
+                    <div class="card">
+                        <img class="avatars"  id="avjolin" src="/JEMMA\medias\jolin avatar.jpeg"  alt="Jolin" >
+                        <div class="container">
+                            <h2>Jolin</h2>
+                            <p class="members-title">The Nai-Nai</p>
+                            <p> blah blah blah blah blah blah blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coloumn1">
+                    <div class="card">
+                        <img class="avatars"  id="avevelynn" src="/JEMMA\medias\evelynn avatar.jpg"  alt="Evelynn">
+                        <div class="container">
+                            <h2>Evelynn</h2>
+                            <p class="members-title">The Asian parent</p>
+                            <p> blah blah blah blah blah blah blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coloumn1">
+                    <div class="card">
+                        <img class="avatars"  id="avmarvel" src="/JEMMA\medias\marvel avatar.jpg"  alt="Marvel">
+                        <div class="container">
+                            <h2>Marvel</h2>
+                            <p class="members-title">The Studio</p>
+                            <p> blah blah blah blah blah blah blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="members-row2">
+                <div class="coloumn2">
+                    <div class="card">
+                        <img class="avatars"  id="avmercedes" src="/JEMMA\medias\mercedes avatar.jpg"  alt="Mercedes">
+                        <div class="container"> 
+                            <h2>Mercedes</h2>
+                            <p class="members-title">The Car</p>
+                            <p> currently being kidnapped in the photo </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coloumn2">
+                    <div class="card">
+                        <img class="avatars"  id="avandrew" src="/JEMMA\medias\andrew avatar.jpg"  alt="Andrew">
+                        <div class="container">
+                            <h2>Andrew</h2>
+                            <p class="members-title">The dude</p>
+                            <p> blah blah blah blah blah </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" >
+            <div id="caption"></div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="experience-text">
+            <p class="members">Our experience !<br> &#8650;</p>
+        </div>
+        <div class="experience-container">
+            <img class="my-img" src="/JEMMA\medias\experience 2.jpg">
+            <img class="my-img" src="/JEMMA\medias\experience 3.jpg">
+            <img class="my-img" src="/JEMMA\medias\experience 1.jpg">
+        <script src="sript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator </title>
+    <meta charset="UTF -8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="setMyKeyDown()">
+    <script src="main.js"></script>
+    <div class="wrapper"> 
+      <section class="display" id="display">
+      0
+      </section>
+
+      <section class="buttons">
+        <div class="buttons_row">
+          <button type="button" onclick='onClick("cmplx")' class="calc_SymButtons" id="cmplx" ><span> cmplx </span></button>
+          <button type="button" onclick='onClick("C")' class="calc_SymButtons" id="C"><span> C </span></button>
+          <button type="button" onclick='onClick("del")' class="calc_SymButtons" id="del"><span> del </span></button>
+          <button type="button" onclick="onClick('/')" class="calc_SymButtons" id="/"><span> / </span></button>
+        </div>
+        <div class="buttons_row">
+          <button type="button" onclick='onClick(7)' class="calc_NumButtons" id="7"><span> 7 </span></button>
+          <button type="button" onclick='onClick(8)' class="calc_NumButtons" id="8"><span> 8 </span></button>
+          <button type="button" onclick='onClick(9)' class="calc_NumButtons" id="9"><span> 9 </span></button>
+          <button type="button" onclick='onClick("*")' class="calc_SymButtons" id="*"><span> * </span></button>
+        </div>
+        <div class="buttons_row">
+          <button type="button" onclick='onClick(4)' class="calc_NumButtons" id="4"><span> 4 </span></button>
+          <button type="button" onclick='onClick(5)' class="calc_NumButtons" id="5"><span> 5 </span></button>
+          <button type="button" onclick='onClick(6)' class="calc_NumButtons" id="6"><span> 6 </span></button>
+          <button type="button" onclick='onClick("-")' class="calc_SymButtons" id="-"><span> - </span></button>
+        </div>
+        <div class="buttons_row">
+          <button type="button" onclick='onClick(1)' class="calc_NumButtons" id="1"><span> 1 </span></button>
+          <button type="button" onclick='onClick(2)' class="calc_NumButtons" id="2"><span> 2 </span></button>
+          <button type="button" onclick='onClick(3)' class="calc_NumButtons" id="3"><span> 3 </span></span></button>
+          <button type="button" onclick='onClick("+")' class="calc_SymButtons" id="+"><span> + </span></button>
+        </div>
+        <div class="buttons_row">
+          <button type="button" onclick='onClick(0)' class="calc_3buttons" id="0"><span> 0 </span></button>
+          <button type="button" onclick='onClick("=")' class="calc_SymButtons" id="="><span> = </span></button>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

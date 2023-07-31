@@ -1,0 +1,93 @@
+div label input {
+    margin-right:100px;
+}
+body {
+    font-family: sans-serif;
+    margin: 0 auto; text-align: center;
+
+}
+
+h1 {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+.container {
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 15px;
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+@media screen and (max-width:700px) {
+    .container {
+      width: 100%;
+    }
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.display{
+    text-align: center;
+    padding: 10% 0;
+    font-weight: bolder;
+}
+.buttons{
+    background-color: #ffffff;
+    border-radius: 1px;
+    float: left;
+}
+
+.buttons label {
+    margin: 10px;
+    float: left; line-height: 3.0em;
+    width: 8.0em; height: 3.0em;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.buttons label span {
+    text-align: center;
+    padding: 3px 0;
+    display: block;
+    color: #000000;
+}
+
+.buttons label input {
+    position: absolute;
+    display: none;
+}
+.buttons label:hover{
+    background-color: rgba(0, 255, 255, 0.429);
+    transition-duration: 0.4s;
+}
+.buttons input:checked+ span{
+    background-color: #1BB8F7;
+
+}
+
+button{
+    margin-top: 5%;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 10px;
+}
+
+#submit:hover{
+    background-color: rgb(250, 203, 31);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+

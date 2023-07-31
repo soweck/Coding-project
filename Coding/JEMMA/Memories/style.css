@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-image: url(space.jpg);
+}
+.stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
+
+*{box-sizing: border-box;}
+/*navigation*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 53px;
+}
+
+#logo{
+    float: left;
+    color: white;
+    padding-top: 4px;
+}
+.logo-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 14px;
+    float: right;
+    display:block;
+}
+
+
+.tabs{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    background: #333;
+}
+
+.tabs:hover{
+    background: rgb(39, 38, 38);
+    cursor: pointer;
+}
+
+/*slideshow*/
+
+  
+.slideshow-container img{
+    vertical-align: middle;
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain
+}
+.slideshow-container {
+    width: 100%;
+    height: 62.5%;
+    position: relative;
+    margin: auto;
+    background: black;
+
+}
+.pictures{display: none;}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(92, 91, 91, 0.8);
+}
+.dot-container{
+    word-spacing: 10px;
+    font-weight: bold; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade; /*calling @keyframe*/
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}  
+
+/*avatar*/
+.members-text{
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+}
+.members{
+    font-family: 'Ethnocentric';
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f2f2f2;
+}
+.coloumn1{
+    float: left;
+    width: 33.3%  ;
+    margin-bottom: 16px;    
+    padding: 0 40px;
+}
+.coloumn2{
+    float: left;
+    width: 50%  ;
+    margin-bottom: 16px;    
+    padding: 0 40px;
+}
+@media screen and (max-width: 650px) {
+    .coloumn1,.coloumn2{
+      width: 100%;
+      display: inline-block;
+    }
+}
+.members-row1{
+    padding: 0 15%;
+}
+.members-row2{
+    padding: 0 27%;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgb(255, 0, 255);
+}
+.container {
+    padding: 0 16px;
+    background:white;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.members-title {
+    color: grey;
+}
+
+/*modal*/
+.avatars {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.avatars:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    max-height: 575px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: fixed;
+    top: 15px;
+    right: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+.modal-content {
+    width: 100%;
+}
+}
+
+/*experience*/
+.experience-container{
+    position: absolute;
+    width: 100%;
+    height: 690px;
+    border: rgb(153, 0, 255) 25px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.experience-text{
+    text-align: center;
+}
+.my-img{
+    resize: both;
+}

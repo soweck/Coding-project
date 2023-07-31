@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title> Form </title>
+        <link rel="stylesheet" href="form_style.css">
+    </head>
+
+    <body>
+        <form action="C:\xampp\htdocs\PHP TEST\PHP TEST.php">
+            <label  for="full name"> Full Name </label>
+            <input required autocomplete="name" type="text" id="full name" name="full name" pattern="[a-zA-Z][a-z\sA-Z]+$">
+
+            <label  for="bday"> Birthday</label>
+            <input required  autocomplete="bday" type="date" id="bday" name="bday">
+
+            <label  for="email"> Email</label>
+            <input required autocomplete="email" type="email" id="email" name="email">
+
+            <label  for="phone">Phone Number </label>
+            <input required autocomplete="tel" type="tel" pattern="[+][6][2][0-9]{11}" placeholder="+62" id="phone" name="phone">
+
+            <label  for="Interest"> Interest </label>
+            <select id="Interest" name="Interest" required>
+                <option value="Basketball">Basketball </option>
+                <option value="Formula1">Formula1 </option>
+                <option value="crocheting">crocheting </option>
+            </select>
+            <br>
+            <button>Submit</button>
+        </form>
+
+    </body>
+</html>
