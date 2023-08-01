@@ -23,7 +23,7 @@ li{
     background-color: #ffffff;
     height: 55px;
     top: 0;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
     transition: 0.4s;
@@ -62,8 +62,8 @@ li{
 }
 
 .navigation--top img{
-    object-fit:fill;
-    height: 53px;
+    object-fit:contain;
+    height: 45px;
     display: block;
 }
 
@@ -82,6 +82,7 @@ li{
 }
 .navigation--list-button button:hover{
     background-color: #980236;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .navigation--list-icon i:hover{
     font-size: 23px;
@@ -91,4 +92,32 @@ li{
 .filler{
     background-color: lightblue;
     height: 2000px;  width: 2000px;
+}
+.home{
+    margin-top: 55px;
+}
+
+.home-banner-img{
+    object-fit: fill;
+    position: relative;
+    width: 100%;
+}
+.home-banner-overlay{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.home-banner-overlay-buttonsContainer{
+    padding-top: 15px;
+}
+
+
+.home-banner-overlay-buttonsContainer button{
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    height: 140px;
+    border: solid darkgrey 2px;
+    border-radius: 5px;
 }
